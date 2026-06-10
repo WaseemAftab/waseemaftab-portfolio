@@ -22,7 +22,7 @@ export default function Portfolio() {
     return () => clearInterval(t);
   }, []);
 
-  // LEAD COUNTER
+  // COUNTER
   function Counter({ end }) {
     const [count, setCount] = useState(0);
 
@@ -47,29 +47,29 @@ export default function Portfolio() {
     return <span>{count.toLocaleString()}</span>;
   }
 
-  const globalPlatforms = ["Meta Ads", "Facebook", "Instagram", "TikTok"];
+  const globalPlatforms = ["DAMAC", "Danube", "Binghatti", "Imtiaz"];
 
   const globalResults =
-    "Improved campaign performance through Meta and TikTok advertising strategies, increasing lead quality and engagement across UAE real estate developers including DAMAC, Danube, Binghatti and Imtiaz.";
+    "Assisted in connecting qualified buyers and investors with UAE real estate developers including DAMAC, Danube, Binghatti, and Imtiaz, focusing on client needs, property matching, and deal support.";
 
   const globalAchievements = [
-    "Delivered high-performing real estate ad campaigns in UAE market",
-    "Generated consistent qualified property leads",
-    "Built expertise in Meta and TikTok paid ads",
-    "Improved CTR and conversions through creative optimization"
+    "Assisted clients in buying off-plan and ready properties in Dubai",
+    "Strong understanding of UAE real estate market and major developers",
+    "Experience in client communication and property presentations",
+    "Supported successful buyer-to-property matching process"
   ];
 
   const projects = [
     {
       id: 1,
       slug: "damac",
-      title: "DAMAC Real Estate Campaigns",
-      description: "Luxury property lead generation campaigns.",
-      platforms: ["Meta Ads", "TikTok"],
+      title: "DAMAC Properties - Sales Support",
+      description: "Luxury property client handling & deal support.",
+      platforms: ["DAMAC", "Luxury Villas", "Apartments"],
       details:
-        "High-performance paid campaigns targeting luxury investors and property buyers across UAE.",
-      results: "Reduced cost per lead and increased high-intent inquiries.",
-      achievements: "Strong conversion performance across Meta platforms.",
+        "Assisted in presenting DAMAC luxury properties to potential buyers and investors based on requirements and investment goals.",
+      results: "Improved buyer interest and property match quality.",
+      achievements: "Supported high-value client property conversions.",
       images: [
         "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
         "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c",
@@ -79,12 +79,13 @@ export default function Portfolio() {
     {
       id: 2,
       slug: "danube",
-      title: "Danube Properties Campaigns",
-      description: "Affordable luxury real estate marketing.",
-      platforms: ["Meta Ads", "Instagram"],
-      details: "Lifestyle-focused creatives for off-plan property launches.",
-      results: "Improved engagement and lead volume.",
-      achievements: "Increased brand awareness across UAE market.",
+      title: "Danube Properties - Sales Support",
+      description: "Affordable luxury property guidance.",
+      platforms: ["Danube", "Apartments", "Off-plan"],
+      details:
+        "Guided potential buyers on Danube off-plan projects with focus on affordability and investment value.",
+      results: "Improved buyer engagement and property inquiries.",
+      achievements: "Increased interest in off-plan developments.",
       images: [
         "https://images.unsplash.com/photo-1560518883-ce09059eeffa",
         "https://images.unsplash.com/photo-1570129477492-45c003edd2be",
@@ -94,12 +95,13 @@ export default function Portfolio() {
     {
       id: 3,
       slug: "binghatti",
-      title: "Binghatti Developers Campaigns",
-      description: "Investor-focused property campaigns.",
-      platforms: ["Meta Ads", "TikTok"],
-      details: "Performance marketing campaigns for Dubai developments.",
-      results: "Improved investor lead generation.",
-      achievements: "Strong visibility for multiple projects.",
+      title: "Binghatti Developers - Sales Support",
+      description: "Investor-focused property guidance.",
+      platforms: ["Binghatti", "Investment Units", "Dubai Projects"],
+      details:
+        "Assisted investors in understanding Binghatti projects and selecting suitable property units.",
+      results: "Better investor engagement and inquiries.",
+      achievements: "Strong understanding of investment-driven property sales.",
       images: [
         "https://images.unsplash.com/photo-1460317442991-0ec209397118",
         "https://images.unsplash.com/photo-1494526585095-c41746248156",
@@ -109,13 +111,13 @@ export default function Portfolio() {
     {
       id: 4,
       slug: "imtiaz",
-      title: "Imtiaz Developments Campaigns",
-      description: "Luxury lifestyle property marketing.",
-      platforms: ["Meta Ads", "Instagram"],
+      title: "Imtiaz Developments - Sales Support",
+      description: "Lifestyle property consultation.",
+      platforms: ["Imtiaz", "Luxury Living", "Dubai Properties"],
       details:
-        "High-end property campaigns focused on lifestyle and investment value.",
-      results: "Better lead quality and engagement.",
-      achievements: "Positioned brand strongly in UAE property market.",
+        "Presented lifestyle-focused properties to clients looking for premium living in Dubai.",
+      results: "Improved client satisfaction and property matching.",
+      achievements: "Strong positioning of luxury lifestyle units.",
       images: [
         "https://images.unsplash.com/photo-1484154218962-a197022b5858",
         "https://images.unsplash.com/photo-1501183638710-841dd1904471",
@@ -233,14 +235,13 @@ export default function Portfolio() {
                   Waseem Aftab
                 </h1>
                 <p className="mt-5 text-lg opacity-90 max-w-xl mx-auto">
-                  Real Estate Digital Marketing Specialist — Meta Ads, TikTok
-                  Ads & UAE Lead Generation
+                  Real Estate Sales Officer — UAE Property Specialist | Off-plan & Ready Property Deals
                 </p>
               </div>
 
-              {/* LEAD COUNTER */}
+              {/* COUNTER */}
               <div className="absolute bottom-10 left-1/2 -translate-x-1/2 text-white text-center">
-                <p className="text-sm opacity-80">Leads Generated</p>
+                <p className="text-sm opacity-80">Properties Assisted</p>
                 <p className="text-3xl font-semibold">
                   <Counter end={10000} />+
                 </p>
@@ -249,14 +250,16 @@ export default function Portfolio() {
 
             {/* RESULTS */}
             <section className="py-24 px-6 max-w-4xl mx-auto text-center">
-              <h2 className="text-2xl font-semibold mb-4">Results & Impact</h2>
+              <h2 className="text-2xl font-semibold mb-4">
+                Sales Impact & Experience
+              </h2>
               <p className="text-gray-600">{globalResults}</p>
             </section>
 
             {/* ACHIEVEMENTS */}
             <section className="py-24 bg-white border-y">
               <h2 className="text-2xl font-semibold text-center mb-10">
-                Achievements
+                Key Strengths
               </h2>
 
               <div className="grid md:grid-cols-2 gap-5 max-w-4xl mx-auto px-6">
@@ -274,7 +277,7 @@ export default function Portfolio() {
             {/* CASE STUDIES */}
             <section className="py-24 px-6 max-w-5xl mx-auto">
               <h2 className="text-2xl font-semibold text-center mb-10">
-                Case Studies
+                Developer Experience
               </h2>
 
               <div className="grid md:grid-cols-2 gap-6">
@@ -305,11 +308,11 @@ export default function Portfolio() {
                 className="bg-black text-white px-6 py-3 rounded-full flex items-center gap-2"
               >
                 <MessageCircle size={18} />
-                WhatsApp
+                Contact for Property Inquiry
               </a>
             </section>
 
-            {/* FLOATING WHATSAPP BUTTON */}
+            {/* FLOATING WHATSAPP */}
             <a
               href={whatsappLink}
               className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50"
